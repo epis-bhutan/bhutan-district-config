@@ -24,11 +24,6 @@
     ],
     "config": {
         "diagnosisStatus": "Inactive",
-        "program": {
-            "patientInformation": {
-                "ageLimit": 100
-            }
-        },
         "obsIgnoreList": [
             "REGISTRATION FEES",
             "COMMENTS",
