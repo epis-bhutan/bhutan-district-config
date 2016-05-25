@@ -249,5 +249,36 @@
     "drugOrderReport":{
         "name": "Drug Order report",
         "type":"DrugOrder"
+    },
+    "visitAggregateCount": {
+        "name": "Visit Aggregate Count Report",
+        "type": "VisitAggregateCount",
+        "config": {
+            "type": "VisitAggregateCountReport",
+            "visitTypes": "'IPD','OPD','MCH','Traditional','Dental'"
+        }
+    },
+    "visitReportbasedOnPatientType":{
+        "name": "Report of Visits for NB1 & NB2 & NB3",
+        "type": "genericVisitReport",
+        "config": {
+            "forDataAnalysis": true,
+            "patientAttributes": [ "Non-Bhutanese Type"],
+            "visitAttributes": ["Visit Status", "Admission Status"],
+            "applyDateRangeFor": "visitStopDate",
+            "visitTypesToFilter": ["IPD","OPD","MCH","Traditional","Dental"]
+        }
+    },
+    "visitReportbasedonGender":{
+        "name": "Report of Male visits & Female visits",
+        "type": "genericVisitReport",
+        "config": {
+            "forDataAnalysis": true,
+            "patientAttributes": ["Father/Husband's Name"],
+            "visitAttributes": ["Visit Status"],
+            "patientAddresses": ["address3", "city_village"],
+            "applyDateRangeFor": "visitStopDate",
+            "visitTypesToFilter": ["IPD","OPD","MCH","Traditional","Dental"]
+        }
     }
 }

@@ -1,0 +1,38 @@
+
+@page {
+    margin-left: 0.2cm;
+    margin-right: 0.2cm;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+}
+
+/* line 10, print.scss */
+p, h1, h2, h3, table, tr, td, div, span, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* line 14, print.scss */
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+table , td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 3px;
+    width: 100px;
+    height: 25px;
+}
+th {
+    background: #f0e6cc;
+}
+.even {
+    background: #fbf8f0;
+}
+.odd {
+    background: #fefcf9;
+}
