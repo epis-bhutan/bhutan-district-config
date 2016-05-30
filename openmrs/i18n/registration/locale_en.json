@@ -5,6 +5,8 @@
   "REGISTRATION_CREATE_NEW_CONFIG_ACCESS_KEY": "n",
   "REGISTRATION_VIEW_CONFIG_KEY": "View",
   "REGISTRATION_PRINT_REG_CARD_LOCAL_KEY" : "Print Reg. Card (<u>L</u>ocal)",
+  "REGISTRATION_PRINT_CONSULTATION_SHEET" : "Consultation Sheet Print",
+  "REGISTRATION_PRINT_HOSPITAL_CARD" : "Hospital Card Print",
   "REGISTRATION_PRINT_REG_CARD_KEY":"<u>P</u>rint Registration Card",
   "REGISTRATION_PRINT_SUPPLEMENTAL_PAPER":"P<u>r</u>int Supplemental Paper",
   "REGISTRATION_AGE_ERROR_KEY":"Age should be a positive value",

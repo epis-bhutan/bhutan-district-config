@@ -55,19 +55,14 @@
             "showCasteSameAsLastNameCheckbox": false,
             "printOptions": [
                 {
-                    "translationKey": "REGISTRATION_PRINT_REG_CARD_LOCAL_KEY",
-                    "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/print_local.html",
-                    "shortcutKey": "l"
+                    "translationKey": "REGISTRATION_PRINT_CONSULTATION_SHEET",
+                    "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/printConsultationSheet.html",
+                    "shortcutKey": "k"
                 },
                 {
-                    "translationKey": "REGISTRATION_PRINT_REG_CARD_KEY",
-                    "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/print.html",
-                    "shortcutKey": "p"
-                },
-                {
-                    "translationKey": "REGISTRATION_PRINT_SUPPLEMENTAL_PAPER",
-                    "templateUrl": "/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html",
-                    "shortcutKey": "r"
+                    "translationKey": "REGISTRATION_PRINT_HOSPITAL_CARD",
+                    "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/hospitalCard.html",
+                    "shortcutKey": "m"
                 }
             ],
             "conceptSetUI": {
@@ -91,9 +86,9 @@
                     "field": "address2"
                 },
                 "customAttributes": {
-                    "label": "Father/Husband/CID/Household #",
-                    "placeholder": "Father/Husband/CID/Household #",
-                    "fields": ["Father/Husband's Name", "Citizenship Identification Number	", "Household Number"]
+                    "label": "Father/Husband/CID/Household ",
+                    "placeholder": "Father/Husband/CID/Household ",
+                    "fields": ["fatherorhusband","citizenidenNumber","houseHoldNumber"]
                 }
             }
         }

@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/printHospital.css"/>
+<table>
+    <tbody>
+    <tr> Date :{{patient.registrationDate | bahmniDate}}</tr><br>
+    <tr>Registration Number :{{patient.identifier}}</tr><br>
+    <tr>Name:{{patient.givenName}} {{patient.middleName}} {{patient.familyName}}</tr><br>
+    <tr>Age :{{patient.age | age}}</tr><br>
+    <tr>Gender : {{patient.gender}}</tr><br>
+    <tr>Address: {patient.address}}</tr><br>
+    <tr>Citizen Identification Number : {{patient['citizenidenNumber']}}</tr><br>
+    <tr>HouseHold Number : {{patient['houseHoldNumber']}}</tr><br>
+    <tr>Father/Husband's Name :  {{patient['fatherorhusband']}}</tr><br>
+    </tbody>
+</table>
+

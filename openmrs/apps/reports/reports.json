@@ -259,26 +259,27 @@
         }
     },
     "visitReportbasedOnPatientType":{
-        "name": "Report of Visits for NB1 & NB2 & NB3",
+        "name": "Report of Visits for NB1 and NB2 and NB3",
         "type": "genericVisitReport",
         "config": {
             "forDataAnalysis": true,
-            "patientAttributes": [ "Non-Bhutanese Type"],
+            "patientAttributes": [ "nonbhutanesetype"],
             "visitAttributes": ["Visit Status", "Admission Status"],
             "applyDateRangeFor": "visitStopDate",
             "visitTypesToFilter": ["IPD","OPD","MCH","Traditional","Dental"]
         }
     },
     "visitReportbasedonGender":{
-        "name": "Report of Male visits & Female visits",
+        "name": "Report of Male visits and Female visits",
         "type": "genericVisitReport",
         "config": {
             "forDataAnalysis": true,
-            "patientAttributes": ["Father/Husband's Name"],
+            "patientAttributes": ["fatherorhusband"],
             "visitAttributes": ["Visit Status"],
             "patientAddresses": ["address3", "city_village"],
             "applyDateRangeFor": "visitStopDate",
-            "visitTypesToFilter": ["IPD","OPD","MCH","Traditional","Dental"]
+            "visitTypesToFilter": ["IPD","OPD","MCH","Traditional","Dental"],
+            "locationTagsToFilter": ["Login Location"]
         }
     }
 }

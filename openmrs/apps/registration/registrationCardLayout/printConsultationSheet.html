@@ -1,33 +1,32 @@
 <link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/registrationCardLayout/css/printConsultation.css"/>
-<h2>OPD CARD</h2>
+<h3>OPD CARD</h3>
 <span class="fl"><h2>Name of Health Facility PARO</h2></span>
 <table>
     <tbody>
-    <tr>
-        <td colspan="2">Registration Number</td>
-        <td colspan="3">{{patient.identifier}}</td>
-        <td colspan="2">Date</td>
-        <td colspan="4">{{today | bahmniDate}}</td>
+    <tr class="header-consultation">
+        <td class="header-consultation" colspan="2">Registration Number</td>
+        <td class="header-consultation" colspan="3">{{patient.identifier}}</td>
+        <td class="header-consultation" colspan="2">Date</td>
+        <td class="header-consultation" colspan="4">{{today | bahmniDate}}</td>
     </tr>
     <tr>
-        <td colspan="2">Patient's Name</td>
-        <td colspan="3">{{patient.givenName}} {{patient.middleName}} {{patient.familyName}}</td>
-        <td colspan="2">Gender</td>
-        <td colspan="2">M<input type="checkbox" ng-checked="patient.gender=='M'"> </td>
-        <td colspan="2">F<input type="checkbox" ng-checked="patient.gender=='F'"> </td>
-        <td colspan="2">O<input type="checkbox" ng-checked="patient.gender=='O'"> </td>
+        <td class="header-consultation" colspan="2">Patient's Name</td>
+        <td class="header-consultation" colspan="3">{{patient.givenName}} {{patient.middleName}} {{patient.familyName}}</td>
+        <td class="header-consultation" colspan="2">Gender</td>
+        <td class="header-consultation" colspan="2">M<input type="checkbox" ng-checked="patient.gender=='M'"> </td>
+        <td class="header-consultation" colspan="2">F<input type="checkbox" ng-checked="patient.gender=='F'"> </td>
     </tr>
     <tr>
-        <td colspan="2">Address</td>
-        <td colspan="3">{{patient.address}}</td>
-        <td colspan="2">Age</td>
-        <td colspan="4">{{patient.age | age}}</td>
+        <td class="header-consultation" colspan="2">Address</td>
+        <td class="header-consultation" colspan="3">{{patient.address}}</td>
+        <td class="header-consultation" colspan="2">Age</td>
+        <td class="header-consultation" colspan="4">{{patient.age | age}}</td>
     </tr>
     <tr>
-        <td colspan="2">Referred From </td>
-        <td colspan="2"></td>
-        <td colspan="3">Service Referred to </td>
-        <td colspan="4"></td>
+        <td class="header-consultation" colspan="2">Referred From </td>
+        <td class="header-consultation" colspan="2">{{patient['referredFrom']}}</td>
+        <td class="header-consultation" colspan="3">Service Referred to </td>
+        <td class="header-consultation" colspan="4">  </td>
     </tr>
     <tr>
         <td colspan="7">Health Problem/Diagnosis</td>
@@ -35,11 +34,14 @@
         <td colspan="2">a)</td>
     </tr>
     <tr>
-        <td colspan="9" rowspan="2"></td>
+        <td colspan="9" rowspan="3"></td>
         <td colspan="2">b)</td>
     </tr>
     <tr>
         <td colspan="2">c)</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="border-left:none;">extra</td>
     </tr>
     <tr>
         <td colspan="11">Investigation/Treatment/Therapy/Drugs Prescribed(Continue Leafover)</td>
