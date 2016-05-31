@@ -1,4 +1,6 @@
 
+
+
 @page {
    margin-left: 0.2cm;
    margin-right: 0.2cm;
@@ -64,4 +66,16 @@ td.extra{
   border-top:none;
   border-bottom:none;
   width:1035px;
+}
+
+.horizontal_align{
+align: top;
+padding: 3px;
+height: auto;
+}
+
+
+.investigation{
+ vertical-align: top;
+ height: 100px;
 }
